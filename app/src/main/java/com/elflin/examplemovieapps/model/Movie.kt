@@ -7,12 +7,12 @@ import java.util.Date
 
 data class Movie(
     val id: Int = -1,
-    val overview: String = "",
-    @DrawableRes val poster_path: Int = 0,
-    val release_date: Date = Date(),
-    val title: String = "",
-    val vote_average: Float = 0f,
-    val vote_count: Int = 0,
+    val overview: String,
+    val poster_path: String,
+    val release_date: Date,
+    val title: String,
+    val vote_average: Float,
+    val vote_count: Int,
     var isLiked: Boolean = false
 ){
     @SuppressLint("SimpleDateFormat")
